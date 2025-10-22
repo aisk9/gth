@@ -1,0 +1,20 @@
+[
+  {
+    "username": "user1",
+    "password": "password123",
+    "name": "Айсулу К",
+    "email": "aisuluu@gmail.com"
+  },
+  {
+    "username": "admin",
+    "password": "adminpass",
+    "name": "АЙСУЛУ (Админ)",
+    "email": "aisuluu@gmail.com"
+  },
+  {
+    "username": "guest",
+    "password": "123",
+    "name": "Гость",
+    "email": "guest@gmail.com"
+  }
+]

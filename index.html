@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Music Stream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="login-form-container" class="container active">
+        <form id="login-form" class="login-card">
+            <h2>Вход в Music Stream</h2>
+            
+            <label for="username">Логин:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required>
+
+            <p id="error-message" class="error-text"></p>
+
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+
+    <div id="dashboard-container" class="container hidden">
+        <header class="header">
+            <h1 id="welcome-message">Добро пожаловать, [Имя Пользователя]!</h1>
+            <div class="user-info-box">
+                <span id="user-email" class="user-email-display"></span>
+                <button id="logout-button" class="logout-btn">Выйти</button>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <h2>Персональная подборка</h2>
+            
+            <section class="music-list">
+                <div class="track-card" data-song="panzermench - and one">
+                    <img src="https://avatars.mds.yandex.net/i?id=86c169d131bd85a069e47bb55c153719_l-5311685-images-thumbs&n=13" alt="Album Art" class="album-art">
+                    <div class="track-info">
+                        <h4>Panzermensch</h4>
+                        <p>And One</p>
+                    </div>
+                    <button class="play-btn">▶</button>
+                </div>
+
+                <div class="track-card" data-song="venus doom - HIM">
+                    <img src="https://www.indieforbunnies.com/wp-content/uploads/2020/01/himcover.jpg" alt="Album Art" class="album-art">
+                    <div class="track-info">
+                        <h4>Venus Doom</h4>
+                        <p>HIM</p>
+                    </div>
+                    <button class="play-btn">▶</button>
+                </div>
+
+                <div class="track-card" data-song="Good Time - The dare">
+                    <img src="https://images.genius.com/8ffc5603bf0dd827b8c5b4f50668a8d3.1000x1000x1.png" alt="Album Art" class="album-art">
+                    <div class="track-info">
+                        <h4>Good Time</h4>
+                        <p>The Dare</p>
+                    </div>
+                    <button class="play-btn">▶</button>
+                </div>
+                
+                <div class="track-card" data-song="latex - chemlab">
+                    <img src="https://images.genius.com/81ec2d41b5b0eea3c633538646d26caa.1000x1000x1.png" alt="Album Art" class="album-art">
+                    <div class="track-info">
+                        <h4>Latex</h4>
+                        <p>Chemlab</p>
+                    </div>
+                    <button class="play-btn">▶</button>
+                </div>
+                
+                <div class="track-card" data-song="girls and boys - blur">
+                    <img src="https://avatars.mds.yandex.net/i?id=099f901698ccc2a5cf672a2447bb01fcd04dc834-5105253-images-thumbs&n=13" alt="Album Art" class="album-art">
+                    <div class="track-info">
+                        <h4>Girls and Boys</h4>
+                        <p>Blur</p>
+                    </div>
+                    <button class="play-btn">▶</button>
+                </div>
+                
+                <div class="track-card" data-song="Amnesia - KMFDM">
+                    <img src="https://avatars.mds.yandex.net/i?id=2c10006705761f6cf7396d58a5457dafd3fa2471-5383525-images-thumbs&n=13" alt="Album Art" class="album-art">
+                    <div class="track-info">
+                        <h4>Amnesia</h4>
+                        <p>KMFDM</p>
+                    </div>
+                    <button class="play-btn">▶</button>
+                </div>
+                
+            </section>
+        </main>
+        <footer class="footer">
+        <p>&copy; 2025 Music Stream. Все права защищены. Создан на основе Spotify.</p>
+    </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
